@@ -17,20 +17,25 @@
       text-shadow: 1px 1px 2px #fff;
     }
     label {
-      display:block;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-top: 0.7rem;
       font-weight: bold;
+      gap: 0.5rem;
+    }
+    input[type="number"], input[type="checkbox"] {
+      transform: scale(1.1);
+      margin-left: 0.4rem;
     }
     input[type="number"] {
       padding: 0.3rem;
       border: 1px solid #ccc;
       border-radius: 6px;
-    }
-    input[type="checkbox"] {
-      margin-right: 0.4rem;
+      width: 80px;
     }
     button {
-      margin-top: 1rem;
+      margin-top: 1.2rem;
       padding: 0.6rem 1.2rem;
       border: none;
       border-radius: 8px;
@@ -39,6 +44,7 @@
       font-size: 1rem;
       cursor: pointer;
       transition: background 0.3s;
+      width: 100%;
     }
     button:hover {
       background: #ab47bc;
@@ -47,15 +53,31 @@
       margin-top: 1.5rem;
       font-family: monospace;
       white-space: pre-wrap;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.85);
       padding: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    /* 📱 Mobil uyğunluq */
+    @media (max-width: 600px) {
+      body {
+        margin: 1rem;
+        font-size: 0.95rem;
+      }
+      label {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      input[type="number"] {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Şifrə Generatoru</h1>
+
   <label>Uzunluq: <input id="length" type="number" value="16" min="4" max="128"></label>
   <label><input id="upper" type="checkbox" checked> Böyük hərflər (A-Z)</label>
   <label><input id="lower" type="checkbox" checked> Kiçik hərflər (a-z)</label>
@@ -63,8 +85,8 @@
   <label><input id="symbols" type="checkbox" checked> Xüsusi simvollar (!@#...)</label>
   <label><input id="avoid" type="checkbox"> Ambiguous simvolları çıxar (O,0,l,1)</label>
   <label>Nə qədər: <input id="count" type="number" value="3" min="1" max="50"></label>
-  <button id="gen">Generator et</button>
 
+  <button id="gen">Generator et</button>
   <div class="output" id="out"></div>
 
 <script>
