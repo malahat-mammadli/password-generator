@@ -2,6 +2,7 @@
 <html lang="az">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- vacib: responsive üçün -->
   <title>Şifrə Generatoru</title>
   <style>
     body {
@@ -58,11 +59,25 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
 
-    /* 📱 Mobil uyğunluq */
+    /* Desktop görünüşü */
+    @media (min-width: 601px) {
+      label {
+        flex-direction: row;
+        align-items: center;
+      }
+      input[type="number"] {
+        width: 120px;
+      }
+      body {
+        font-size: 1rem;
+      }
+    }
+
+    /* Mobil görünüşü */
     @media (max-width: 600px) {
       body {
         margin: 1rem;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
       }
       label {
         flex-direction: column;
