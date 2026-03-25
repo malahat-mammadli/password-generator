@@ -1,10 +1,10 @@
-# 🔑 KeyForge — Password Generator
+# KeyForge — Password Generator
 
 A sleek, pro-grade password generator built with pure HTML, CSS, and JavaScript. No frameworks, no dependencies, no tracking — just fast, secure passwords in your browser.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Cryptographically secure** — uses `crypto.getRandomValues()`
 - **Guaranteed character coverage** — ensures at least one character from each selected type, shuffled with Fisher-Yates
@@ -21,17 +21,17 @@ A sleek, pro-grade password generator built with pure HTML, CSS, and JavaScript.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 No install. No signup. Just click and use:
 
-👉 **[https://malahat-mammadli.github.io/password-generator/](https://malahat-mammadli.github.io/password-generator/)**
+**[https://malahat-mammadli.github.io/password-generator/](https://malahat-mammadli.github.io/password-generator/)**
 
 Works in any modern browser — desktop or mobile.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 password-generator/
@@ -41,7 +41,7 @@ password-generator/
 
 ---
 
-## 🛡️ Security Notes
+## Security Notes
 
 | Method | Detail |
 |---|---|
@@ -54,20 +54,20 @@ password-generator/
 
 ---
 
-## 🎨 Design
+## Design
 
 Built with a dark theme and pink accent palette. Typography uses [Syne](https://fonts.google.com/specimen/Syne) for headings and [Space Mono](https://fonts.google.com/specimen/Space+Mono) for code and labels.
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
-👉 [https://malahat-mammadli.github.io/password-generator/](https://malahat-mammadli.github.io/password-generator/)
+[https://malahat-mammadli.github.io/password-generator/](https://malahat-mammadli.github.io/password-generator/)
 
 Open the link — that's it. No account, no install, works for everyone.
 
 ---
 
-## 📄 License
+## License
 
 MIT — free to use, modify, and distribute.
